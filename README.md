@@ -1,6 +1,7 @@
 
 ## Vision-based landing algorithm for autonomous drone
 
+An algorithm of object detection and localization for motion planning of an autonomous drone.
 To provide optimum safety autonomously, a vision based safe landing 
 algorithm is designed. the drone will be capable of detecting any 
 objects that may block it and plans motion in 2D plane to avoid them during the 
