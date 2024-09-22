@@ -9,6 +9,7 @@ landing phase. This problem will be solved by implementing yoloV5 tesnorRT
 model for object detection and creating an occupancy grid map to 
 decide which is the best place to land on. motion commands will be sent over 
 MAVlink protocol to the flight controller to drive the drone. 
+
 below are samples of the output, please don't mind the low quality as it was hard to capture with high quality on the jetson nano
 
 ![photo_2024-09-22_18-03-03](https://github.com/user-attachments/assets/0b90ae47-b7ca-41bf-bd3b-89b1d1b34f03)
