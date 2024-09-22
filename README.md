@@ -1,17 +1,36 @@
-Running YoloV5 with TensorRT Engine on Jetson.
+
+## Vision-based landing algorithm for autonomous drone
+
+To provide optimum safety autonomously, a vision based safe landing 
+algorithm is designed. the drone will be capable of detecting any 
+objects that may block it and plans motion in 2D plane to avoid them during the 
+landing phase. This problem will be solved by implementing yoloV5 tesnorRT
+model for object detection and creating an occupancy grid map to 
+decide which is the best place to land on. motion commands will be sent over 
+MAVlink protocol to the flight controller to drive the drone.
+
+![photo_2024-09-22_18-03-03](https://github.com/user-attachments/assets/0b90ae47-b7ca-41bf-bd3b-89b1d1b34f03)
+![photo_2024-09-22_18-02-54](https://github.com/user-attachments/assets/1651eca6-977e-433b-95f3-01f364516a7c)
+![photo_2024-09-22_18-02-49](https://github.com/user-attachments/assets/f167f15a-1f64-4aeb-b1cf-c4140920ad7b)
+
+https://github.com/user-attachments/assets/6c15184e-2f29-4b12-804a-312abc212346
+
+## Project flight video
+you can watch the full video of the project in the link below.
+https://www.youtube.com/watch?v=jyFPdx2TSI4
+
+
+
+
+## Running YoloV5 with TensorRT Engine on Jetson.
 ==========
 
-This repository contains step by step guide to build and convert YoloV5 model into a TensorRT engine on Jetson. This has been tested on Jetson Nano or Jetson Xavier 
+This is a step by step guide to build and convert YoloV5 model into a TensorRT engine on Jetson. This has been tested on Jetson Nano.
 
-Please install Jetpack OS version 4.6 as mentioned by Nvidia and follow below steps. Please follow each steps exactly mentioned in the video links below :
+Please install Jetpack OS version 4.6 as mentioned by Nvidia and follow below steps. Please follow each steps exactly mentioned :
 
-Build YoloV5 TensorRT Engine on Jetson Nano: https://www.youtube.com/watch?v=ErWC3nBuV6k
+Jetson Nano:
 
-Object Detection YoloV5 TensorRT Engine on Jetson Nano: https://www.youtube.com/watch?v=-Vu65N1NRWw
-
-Jetson Xavier:
-
-<img src="videos/out.jpg" width="800"/>
 
 Install Libraries
 =============
@@ -105,3 +124,9 @@ Use `app.py` to do inferencing on any video file or camera.
 	$ python3 app.py
 
 If you have custom model, make sure to update categories as per your classes in `yolovDet.py` .
+
+
+## Credits
+for more of jetson nano set up guides please refer to
+- https://github.com/mailrocketsystems
+
