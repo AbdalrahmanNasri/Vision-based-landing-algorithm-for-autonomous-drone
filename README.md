@@ -8,7 +8,7 @@ objects that may block it and plans motion in 2D plane to avoid them during the
 landing phase. This problem will be solved by implementing yoloV5 tesnorRT
 model for object detection and creating an occupancy grid map to 
 decide which is the best place to land on. motion commands will be sent over 
-MAVlink protocol to the flight controller to drive the drone.
+MAVlink protocol to the flight controller to drive the drone. below are samples of the output.
 
 ![photo_2024-09-22_18-03-03](https://github.com/user-attachments/assets/0b90ae47-b7ca-41bf-bd3b-89b1d1b34f03)
 ![photo_2024-09-22_18-02-54](https://github.com/user-attachments/assets/1651eca6-977e-433b-95f3-01f364516a7c)
